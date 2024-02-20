@@ -4,7 +4,7 @@ text = st.text_input()
 shift_keys = st.text_input().split()
 shift_keys = [int(key) for key in shift_keys]
 
-def encrypt_decrypt(text, shift_keys, ifdecrypt)
+def encrypt_decrypt(text, shift_keys, ifdecrypt):
     result = ""
 
     if len(shift_keys) <= 1 or len(shift_keys) > len(text):
