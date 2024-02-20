@@ -32,7 +32,7 @@ def xor_decrypt(ciphertext, key):
 if st.button("Submit"):
     if plaintext.decode() == key.decode():
         st.write("plaintext should not be equal to the key")
-    elif key == " ":
+    if key == " ":
         st.error("No input key")
     elif len(key.decode()) > len(plaintext.decode()):
         st.write("plaintext length should be equal or greater than the length of key")
