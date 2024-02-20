@@ -1,7 +1,7 @@
 import streamlit as st
 
-text = st.text_input()
-shift_keys = str(st.text_input)
+text = st.text_input
+shift_keys = str.st.text_input
 shift_keys = [int(key) for key in shift_keys]
 
 def encrypt_decrypt(text, shift_keys, ifdecrypt):
