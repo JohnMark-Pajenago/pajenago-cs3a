@@ -31,14 +31,14 @@ def xor_decrypt(ciphertext, key):
 
 if st.button("Submit"):
     if plaintext.decode() == key.decode():
-        print("plaintext should not be equal to the key")
+        st.write("plaintext should not be equal to the key")
     
     elif len(key.decode()) > len(plaintext.decode()):
-        print("plaintext length should be equal or greater than the length of key")
+        st.write("plaintext length should be equal or greater than the length of key")
     else:
         encrypted_text = xor_encrypt(plaintext, key)
-        print("Ciphertext:", encrypted_text.decode())
+        st.write("Ciphertext:", encrypted_text.decode())
         decrypted_text = xor_decrypt(encrypted_text, key)
-        print("Decrypted:", plaintext.decode())
+        st.write("Decrypted:", plaintext.decode())
         st.write(plaintext)
 
