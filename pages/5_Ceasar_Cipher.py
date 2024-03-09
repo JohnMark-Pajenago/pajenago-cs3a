@@ -1,6 +1,7 @@
 import streamlit as st
 
 st.header("Caesar Cipher")
+st.text('by John Mark A. Pajenago')
 
 
 def encrypt_decrypt(text, shift_keys, ifdecrypt):

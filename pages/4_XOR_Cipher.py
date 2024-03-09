@@ -1,6 +1,7 @@
 import streamlit as st
 
 st.header("XOR Cipher")
+st.text('by John Mark A. Pajenago')
 
 plaintext = bytes(st.text_area("Plain Text:").encode())
 
